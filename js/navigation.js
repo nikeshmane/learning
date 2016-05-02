@@ -12,11 +12,8 @@ var navigationservice = angular.module('navigationservice', [])
     name: "Home",
     classis: "active",
     anchor: "home",
-    subnav: [{
-      name: "Subnav1",
-      classis: "active",
-      link: "#/home"
-    }]
+    subnav: []
+    
   }, {
     name: "Wallpapers",
     classis: "active",
@@ -37,7 +34,12 @@ var navigationservice = angular.module('navigationservice', [])
     classis: "active",
     anchor: "FAQ",
     subnav: []
-  }, ];
+  },{
+    name: "Register",
+    classis: "active",
+    anchor: "Register",
+    subnav: []
+  },];
 
   return {
     getnav: function() {

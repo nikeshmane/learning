@@ -34,6 +34,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
       url: "/FAQ",
       templateUrl: "views/template.html",
       controller: 'FAQCtrl'
+    })
+    .state('Register', {
+      url: "/register",
+      templateUrl: "views/template.html",
+      controller: 'RegisterCtrl'
     });
   $urlRouterProvider.otherwise("/home");
   $locationProvider.html5Mode(isproduction);
